@@ -2,7 +2,7 @@
 
 ## Description
 
-Simple program to print screen i3 FreeBSD
+Simple program to print screen i3 FreeBSD. Appends time and saves file to /tmp/
 
 ## Dependencies
 
@@ -20,4 +20,6 @@ add to i3 conifg
 
 bindsym Print exec qshot qshot.png | xargs gimp
 
+## Usage
 
+./qshot <filename>.png

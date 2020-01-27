@@ -6,6 +6,7 @@
 
 #include <giblib/giblib.h>
 
+
 Display *disp = NULL;
 Visual *vis = NULL;
 Screen *scr = NULL;
@@ -17,12 +18,9 @@ int main (int argc, char **argv)
 {
   Imlib_Load_Error err;
 
-  char outfile[255];
-  char *of = outfile;
-  char timebuff[255];
-  char *tb = timebuff;
-  char infile[255];
-  char *in = infile;
+  char of[255];
+  char tb[255];
+  char in[255];
   time_t t;
   time (&t);
   struct tm *tm;
